@@ -14,14 +14,14 @@
 
 ## 推荐工具链
 
-- Node.js: `24+`
-- 包管理: `bun 1.2+`
-- 代码检查: `ESLint`（Flat Config + typescript-eslint 严格规则）
-- 代码格式化: `Prettier`
-- 类型检查: `TypeScript (tsc --noEmit)`
-- 单元测试: `Vitest`
-- 提交前钩子: `lefthook`
-- 依赖清理: `knip`
+- Node.js：`24+`
+- 包管理：`bun 1.2+`
+- 代码检查：`ESLint`（Flat Config + typescript-eslint 严格规则）
+- 代码格式化：`Prettier`
+- 类型检查：`TypeScript (tsc --noEmit)`
+- 单元测试：`Vitest`
+- 提交前钩子：`lefthook`
+- 依赖清理：`knip`
 
 ## 目录与命名建议
 

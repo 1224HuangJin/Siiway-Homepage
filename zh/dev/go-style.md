@@ -14,14 +14,14 @@
 
 ## 推荐工具链
 
-- Go: `1.24+`
-- 格式化: `gofmt`（基准） + `gofumpt`（更严格）
-- import 排序: `gci`
-- 静态检查聚合: `golangci-lint`
-- 重点规则: `staticcheck`、`govet`、`errcheck`、`ineffassign`
-- 漏洞扫描: `govulncheck`
-- 测试: `go test`（可选 `gotestsum` 提升输出可读性）
-- 提交前钩子: `lefthook`
+- Go：`1.24+`
+- 格式化：`gofmt`（基准） + `gofumpt`（更严格）
+- import 排序：`gci`
+- 静态检查聚合：`golangci-lint`
+- 重点规则：`staticcheck`、`govet`、`errcheck`、`ineffassign`
+- 漏洞扫描：`govulncheck`
+- 测试：`go test`（可选 `gotestsum` 提升输出可读性）
+- 提交前钩子：`lefthook`
 
 ## 目录与命名建议
 
