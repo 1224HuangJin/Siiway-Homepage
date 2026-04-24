@@ -20,6 +20,8 @@ export default defineConfig({
   },
 
   themeConfig: {
+    // 左侧侧边栏上方的图标
+    logo: '/favicon.svg',
     // 搜索功能 https://vitepress.dev/zh/reference/default-theme-search
     search: {
       provider: 'local',
