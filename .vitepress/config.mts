@@ -112,6 +112,11 @@ export default defineConfig({
         // 将"On this page"改为中文
         outline: {
           label: '本页目录'
+        },
+        // 汉化了 "Previous page" 与 "Next page"。
+        docFooter: {
+          prev: '上一篇',
+          next: '下一篇'
         }
       },
     },
