@@ -50,8 +50,8 @@ export default defineConfig({
                   }
                 }
               }
-            },
-  }
+            }
+          },
 
   locales: {
     // === 中文版 (zh) ===
