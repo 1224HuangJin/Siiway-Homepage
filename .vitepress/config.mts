@@ -109,6 +109,10 @@ export default defineConfig({
         lastUpdated: {
           text: "本页最后更新于",
         },
+        // 将"On this page"改为中文
+        outline: {
+          label: '本页目录'
+        }
       },
     },
 
