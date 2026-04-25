@@ -5,8 +5,11 @@ import DefaultTheme from 'vitepress/theme'
 import { nextTick, provide } from 'vue'
 
 const { isDark } = useData()
+const { Layout } = DefaultTheme
+const isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined'
 
 const enableTransitions = () =>
+  isBrowser &&
   'startViewTransition' in document &&
   window.matchMedia('(prefers-reduced-motion: no-preference)').matches
 
@@ -19,8 +22,8 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
   const clipPath = [
     `circle(0px at ${x}px ${y}px)`,
     `circle(${Math.hypot(
-      Math.max(x, innerWidth - x),
-      Math.max(y, innerHeight - y)
+      Math.max(x, window.innerWidth - x),
+      Math.max(y, window.innerHeight - y)
     )}px at ${x}px ${y}px)`
   ]
 
@@ -42,7 +45,11 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 </script>
 
 <template>
-  <DefaultTheme.Layout />
+  <Layout>
+    <template #layout-bottom>
+      <slot name="layout-bottom" />
+    </template>
+  </Layout>
 </template>
 
 <style>
